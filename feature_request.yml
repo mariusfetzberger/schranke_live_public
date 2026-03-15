@@ -1,0 +1,38 @@
+name: 💡 Idee / Feature-Wunsch
+description: Etwas fehlt oder könnte besser sein
+title: "[Idee]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gute Ideen sind immer willkommen! Beschreib einfach, was du dir wünschst.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Was wäre deine Idee?
+      description: Beschreib möglichst konkret, was du dir vorstellst.
+      placeholder: "z.B. Push-Benachrichtigung 5 Minuten bevor die Schranke schließt"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Warum wäre das hilfreich?
+      description: In welcher Situation würde dir das helfen?
+      placeholder: "z.B. Dann könnte ich morgens besser planen, ob ich noch über den BÜ komme"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Wie wichtig ist dir das?
+      options:
+        - Nice to have
+        - Wäre schon praktisch
+        - Würde mir im Alltag sehr helfen
+    validations:
+      required: false
